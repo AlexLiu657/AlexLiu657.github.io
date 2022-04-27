@@ -418,6 +418,7 @@ const VolantisApp = (() => {
             _span.innerText = "COPY";
           }, 2000)
         }).catch(e => {
+          alert(e);
           VolantisApp.message('系统提示', e, {
             icon: 'fa fa-exclamation-circle red'
           });
