@@ -448,6 +448,8 @@ const VolantisApp = (() => {
       //   })
       if (navigator.clipboard && window.isSecureContext) {
         // navigator clipboard 向剪贴板写文本
+        alert(1111)
+        alert(navigator.clipboard);
         return navigator.clipboard
           .writeText(str)
           .then(() => {
@@ -457,6 +459,8 @@ const VolantisApp = (() => {
             return Promise.reject(err || '复制文本失败!')
           })
       } else {
+        alert(222)
+        alert(navigator.clipboard);
         // 创建text area
         let textArea = document.createElement("textarea");
         textArea.value = str;
