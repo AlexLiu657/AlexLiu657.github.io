@@ -61,7 +61,7 @@ html {
   color: var(--color-text);
   width: 100%;
   height: 100%;
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: CascadiaCode, "Microsoft YaHei", "PingFang SC", UbuntuMono, "Varela Round", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
@@ -826,16 +826,16 @@ button {
   }
 }
 @font-face {
-  font-family: 'UbuntuMono';
-  src: url("/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  font-family: 'CascadiaCode';
+  src: url("/media/fonts/CascadiaCode/CascadiaMonoPL.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
-  font-family: 'UbuntuMono';
-  src: url("/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
-  font-weight: 'light';
+  font-family: 'Varela Round';
+  src: url("/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
+  font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
@@ -968,7 +968,7 @@ button {
 }
 .l_header .nav-sub .title {
   font-weight: bold;
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: CascadiaCode, "Microsoft YaHei", "PingFang SC", UbuntuMono, "Varela Round", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
   max-height: 64px;
   white-space: normal;
