@@ -446,7 +446,8 @@ const VolantisApp = (() => {
         const input = document.createElement('textarea');
         input.setAttribute('readonly', 'readonly');
         document.body.appendChild(input);
-        input.setAttribute('value', str);
+        // input.setAttribute('value', str);
+        input.innerHTML = str;
         input.select();
         try {
           let result = document.execCommand('copy')
@@ -702,10 +703,10 @@ const VolantisFancyBox = (() => {
 
   /**
    * 加载及处理
-   * 
+   *
    * @param {*} checkMain 是否只处理文章区域的文章
    * @param {*} done      FancyBox 加载完成后的动作，默认执行分组绑定
-   * @returns 
+   * @returns
    */
   fn.init = (checkMain = true, done = fn.groupBind) => {
     if (!document.querySelector(".md .gallery img, .fancybox") && checkMain) return;
@@ -718,7 +719,7 @@ const VolantisFancyBox = (() => {
 
   /**
    * 图片元素预处理
-   * 
+   *
    * @param {*} selectors 选择器
    * @param {*} name      分组
    */
@@ -739,7 +740,7 @@ const VolantisFancyBox = (() => {
 
   /**
    * 原生绑定
-   * 
+   *
    * @param {*} selectors 选择器
    */
   fn.bind = (selectors) => {
@@ -760,7 +761,7 @@ const VolantisFancyBox = (() => {
 
   /**
    * 分组绑定
-   * 
+   *
    * @param {*} groupName 分组名称
    */
   fn.groupBind = (groupName = null) => {
