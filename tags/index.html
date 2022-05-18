@@ -2,14 +2,15 @@
 <html lang="zh-CN">
     <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.0.0-alpha.11'>
   <meta name="generator" content="Hexo 6.1.0">
+  <meta name="Volantis" content="5.0.0-alpha.11">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
   <link rel="canonical" href="https://it65720.top/tags/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
-      <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
-      <link rel="preconnect" href="https://npm.elemecdn.com" crossorigin>
+      <link rel='dns-prefetch' href='https://unpkg.com'>
+      <link rel="preconnect" href="https://unpkg.com" crossorigin>
   <meta name="renderer" content="webkit">
   <meta name="force-rendering" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -25,13 +26,12 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://bu.dusays.com/2022/04/21/6260355ce0827.ico">
-  <link rel="preload" href="/css/style.53f20bf5.css" as="style">
+  <link rel="preload" href="/css/style.f2b516b2.css" as="style">
   <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <pjax>
   <title>所有标签 - 莫语小栈</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="莫语小栈 - Alex Liu - 莫语小栈">
@@ -46,13 +46,12 @@
 <meta property="article:author" content="Alex Liu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://it65720.top/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-  </pjax>
   <style>
     /* 首屏样式 */
     #safearea {
   display: none;
 }
-/* 
+/*
   * Workaround for Chrome bug, part 1
   * Chunk rendering for all but the first article.
   * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
@@ -217,6 +216,11 @@ button {
   .blur {
     background: rgba(255,255,255,0.9) !important;
     backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+@supports (backdrop-filter: blur(20px)) {
+  .blur#comments {
+    backdrop-filter: unset;
   }
 }
 .shadow {
@@ -1714,8 +1718,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.53f20bf5.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.53f20bf5.css"></noscript>
+  <link rel="stylesheet" href="/css/style.f2b516b2.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.f2b516b2.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1793,9 +1797,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.284414d9.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.1d2dd3e0.js","rightMenus":"/js/plugins/rightMenus.3669cc79.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.06d40311.js"},"css":{"style":"/css/style.53f20bf5.css"}},
+    cdn: {"js":{"app":"/js/app.3c16525b.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.cd02aa19.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.f2b516b2.css"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1652842691268),
+    lastupdate: new Date(1652876570786),
     sidebar: {
       for_page: ["blogger","repos","category","tagcloud","webinfo"],
       for_post: ["toc"],
@@ -1811,7 +1815,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       }
     },
     plugins: {
-      message: {"enable":true,"css":"https://unpkg.com/volantis-static@0.0.1649552113628/libs/izitoast/dist/css/iziToast.min.css","js":"https://unpkg.com/volantis-static@0.0.1649552113628/libs/izitoast/dist/js/iziToast.min.js","icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"","message":"请遵守知识共享许可协议","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
+      message: {"enable":true,"css":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/libs/izitoast/dist/css/iziToast.min.css","js":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/libs/izitoast/dist/js/iziToast.min.js","icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"","message":"请遵守知识共享许可协议","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
       fancybox: {"css":"/libs/@fancyapps/ui/dist/fancybox.css","js":"/libs/@fancyapps/ui/dist/fancybox.umd.js"},
       aplayer: {
         id: 946757183,
@@ -1822,8 +1826,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         layout: ["home","hr","print","darkmode","reading","music"],
         music_alwaysShow: false,
         customPicUrl: {"enable":true,"old":null,"new":null}
-      },      
-      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","music"],"options":{"iconPrefix":"fa-solid","articleShowLink":false,"musicAlwaysShow":false,"corsAnywhere":null},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-solid fa-arrow-left","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-solid fa-arrow-right","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-solid fa-redo","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-solid fa-arrow-up","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-solid fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-solid fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-solid fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-solid fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-solid fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-solid fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-solid fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-solid fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-solid fa-print","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-solid fa-book-open","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"help","name":"常见问题","icon":"fa-solid fa-question","link":"https://volantis.js.org/faqs/","group":"link"},{"id":"examples","name":"示例博客","icon":"fa-solid fa-rss","link":"https://volantis.js.org/examples/","group":"link"},{"id":"contributors","name":"加入社区","icon":"fa-solid fa-fan","link":"https://volantis.js.org/contributors/","group":"link"},"hr",{"id":"source_docs","name":"本站源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/volantis-docs/","group":"link"},{"id":"source_theme","name":"主题源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/hexo-theme-volantis/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-solid fa-moon","event":"volantis.dark.toggle()","group":"darkMode"}]}}
+      },
+      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","music"],"options":{"iconPrefix":"fa-solid","articleShowLink":false,"musicAlwaysShow":false},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-solid fa-arrow-left","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-solid fa-arrow-right","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-solid fa-redo","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-solid fa-arrow-up","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-solid fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-solid fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-solid fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-solid fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-solid fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-solid fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-solid fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-solid fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-solid fa-print","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-solid fa-book-open","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"help","name":"常见问题","icon":"fa-solid fa-question","link":"https://volantis.js.org/faqs/","group":"link"},{"id":"examples","name":"示例博客","icon":"fa-solid fa-rss","link":"https://volantis.js.org/examples/","group":"link"},{"id":"contributors","name":"加入社区","icon":"fa-solid fa-fan","link":"https://volantis.js.org/contributors/","group":"link"},"hr",{"id":"source_docs","name":"本站源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/volantis-docs/","group":"link"},{"id":"source_theme","name":"主题源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/hexo-theme-volantis/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-solid fa-moon","event":"volantis.dark.toggle()","group":"darkMode"}]}}
     }
   }
 
@@ -1972,6 +1976,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     push: volantis.pjax.method.complete.push,
     error: volantis.pjax.method.error.push,
     send: volantis.pjax.method.send.push,
+  });
+  /******************** RightMenu ********************************/
+  // volantis.rightmenu.handle(callBack[,"callBackName"]) 外部菜单项控制
+  // 可在 volantis.mouseEvent 处获取右键事件
+  volantis.rightmenu = {};
+  volantis.rightmenu.method = {
+    handle: new RunItem(),
+  }
+  volantis.rightmenu = Object.assign(volantis.rightmenu, {
+    handle: volantis.rightmenu.method.handle.push,
   });
   /********************  Dark Mode  ********************************/
   // /layout/_partial/scripts/darkmode.ejs
@@ -2152,12 +2166,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       opt.top += option.addTop
     }
     if (!("observerDic" in option)) {
-      option.observerDic = 25
+      option.observerDic = 100
     }
     // 滚动
     window.scrollTo(opt);
     // 监视器
-    // 监视并矫正元素滚动到指定位置 
+    // 监视并矫正元素滚动到指定位置
     // 用于处理 lazyload 引起的 cls 导致的定位失败问题
     // option.observer = false
     if (option.observer) {
@@ -2172,6 +2186,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       },1000)
     }
   }
+  /********************** Content Visibility ********************************/
+  // 见 source/css/first.styl 如果遇到任何问题 删除 .post-story 即可
+  // 一个元素被声明 content-visibility 属性后 如果元素不在 viewport 中 浏览器不会计算其后代元素样式和属性 从而节省 Style & Layout 耗时
+  // content-visibility 的副作用: 锚点失效 等等(实验初期 暂不明确), 使用此方法清除样式
+  volantis.cleanContentVisibility = ()=>{
+    if (document.querySelector(".post-story")) {
+      console.log("cleanContentVisibility");
+      document.querySelectorAll(".post-story").forEach(e=>{
+        e.classList.remove("post-story")
+      })
+    }
+  }
+  /******************************************************************************/
   /******************************************************************************/
   /******************************************************************************/
   //图像加载出错时的处理
@@ -2232,7 +2259,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                  href="/" onclick="return false;" title="文章相关"
                   
                   
@@ -2245,7 +2272,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/categories/" title="文章分类"
                   
                   
@@ -2262,7 +2289,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/archives/" title="文章归档"
                   
                   
@@ -2285,7 +2312,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                  href="/" onclick="return false;" title="鹅煲特"
                   
                   
@@ -2298,7 +2325,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/about/" title="简单介绍"
                   
                   
@@ -2315,7 +2342,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="mailto:1660653535@qq.com" title="联系我"
                   
                   
@@ -2338,7 +2365,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                  href="/" onclick="return false;" title="观前预习"
                   
                   
@@ -2351,7 +2378,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/protocol/comment/" title="评论协议"
                   
                   
@@ -2368,7 +2395,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/protocol/copyright/" title="版权协议"
                   
                   
@@ -2391,7 +2418,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/bb/" title="小声BB"
                   
                   
@@ -2408,7 +2435,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/friends/" title="友链"
                   
                   
@@ -2454,7 +2481,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                  href="/" onclick="return false;" title="文章相关"
                   
                   
@@ -2467,7 +2494,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/categories/" title="文章分类"
                   
                   
@@ -2484,7 +2511,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/archives/" title="文章归档"
                   
                   
@@ -2507,7 +2534,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                  href="/" onclick="return false;" title="鹅煲特"
                   
                   
@@ -2520,7 +2547,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/about/" title="简单介绍"
                   
                   
@@ -2537,7 +2564,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="mailto:1660653535@qq.com" title="联系我"
                   
                   
@@ -2560,7 +2587,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                  href="/" onclick="return false;" title="观前预习"
                   
                   
@@ -2573,7 +2600,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/protocol/comment/" title="评论协议"
                   
                   
@@ -2590,7 +2617,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                       
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/protocol/copyright/" title="版权协议"
                   
                   
@@ -2613,7 +2640,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/bb/" title="小声BB"
                   
                   
@@ -2630,7 +2657,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/friends/" title="友链"
                   
                   
@@ -2921,7 +2948,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.284414d9.js"></script>
+<script src="/js/app.3c16525b.js"></script>
 
 
 
@@ -2984,7 +3011,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <span class='vlts-menu opt fix-cursor-default' id='printHtml'>
               <i class='fa fa-print fa-fw '></i> 打印页面
             </span>
-          </li>  
+          </li>
         
       
         
@@ -3000,7 +3027,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <span class='vlts-menu opt fix-cursor-default' id='readingModel'>
               <i class='fa fa-book-open fa-fw '></i> 阅读模式
             </span>
-          </li>  
+          </li>
         
       
         
@@ -3029,7 +3056,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.1d2dd3e0.js')</script>
+  <script>volantis.js('/js/plugins/rightMenu.d9437285.js')</script>
 
 
 
@@ -3053,19 +3080,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   <li class='navigation menuNavigation-Content'>
 
- 
+
     <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-solid fa-arrow-left fa-fw"></i></a>
 
 
- 
+
     <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-solid fa-arrow-right fa-fw"></i></a>
 
 
- 
+
     <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-solid fa-redo fa-fw"></i></a>
 
 
- 
+
     <a class="nav icon-only fix-cursor-default" onclick="VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)"><i class="fa-solid fa-arrow-up fa-fw"></i></a>
 
 
@@ -3081,7 +3108,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-paste fa-fw"></i>
       粘贴文本
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3090,7 +3117,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-object-ungroup fa-fw"></i>
       全选文本
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3099,7 +3126,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-cut fa-fw"></i>
       剪切文本
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3108,7 +3135,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-copy fa-fw"></i>
       复制文本
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3117,7 +3144,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-search fa-fw"></i>
       站内搜索
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3126,7 +3153,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-search fa-fw"></i>
       必应搜索
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3135,7 +3162,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-external-link-square-alt fa-fw"></i>
       新标签页打开
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3144,7 +3171,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-link fa-fw"></i>
       复制链接地址
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3153,7 +3180,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-image fa-fw"></i>
       复制图片
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3162,7 +3189,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-images fa-fw"></i>
       谷歌识图
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3171,7 +3198,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-question fa-fw"></i>
       常见问题
     </a>
-  </li> 
+  </li>
 
 
 
@@ -3180,7 +3207,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-rss fa-fw"></i>
       示例博客
     </a>
-  </li> 
+  </li>
 
 
 
@@ -3189,7 +3216,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-fan fa-fw"></i>
       加入社区
     </a>
-  </li> 
+  </li>
 
 
 
@@ -3202,7 +3229,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-code-branch fa-fw"></i>
       本站源码
     </a>
-  </li> 
+  </li>
 
 
 
@@ -3211,7 +3238,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-code-branch fa-fw"></i>
       主题源码
     </a>
-  </li> 
+  </li>
 
 
 
@@ -3224,7 +3251,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-moon fa-fw"></i>
       暗黑模式
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3233,7 +3260,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-print fa-fw"></i>
       打印页面
     </span>
-  </li> 
+  </li>
 
 
 
@@ -3242,7 +3269,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-solid fa-book-open fa-fw"></i>
       阅读模式
     </span>
-  </li> 
+  </li>
 
 
 <div id="menuMusic">
@@ -3275,113 +3302,113 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="/js/plugins/rightMenus.3669cc79.js"></script>
+<script src="/js/plugins/rightMenus.cd02aa19.js"></script>
 <script>
   const RightMenusFunction = {};
-   
   
- 
-  
- 
-  
- 
-  
- 
-  
- 
+
+
+
+
+
+
+
+
+
+
 
 
   <!-- RightMenusFunction['copyPaste'] = (fun) => {fun()} -->
-  
-  
- 
+
+
+
 
 
   <!-- RightMenusFunction['copyAll'] = (fun) => {fun()} -->
-  
-  
- 
+
+
+
 
 
   <!-- RightMenusFunction['copyCut'] = (fun) => {fun()} -->
-  
-  
- 
+
+
+
 
 
   <!-- RightMenusFunction['copyText'] = (fun) => {fun()} -->
-  
-  
- 
 
-  
+
+
+
+
   RightMenusFunction['searchWord'] = (__text__) => {OpenSearch(__text__)}
-  
-  
- 
 
-  
+
+
+
+
   RightMenusFunction['bingSearch'] = (__text__) => {window.open(`https://cn.bing.com/search?q=${__text__}`)}
-  
-  
- 
 
-  
+
+
+
+
   RightMenusFunction['openTab'] = (__link__) => {window.open(__link__)}
-  
-  
- 
+
+
+
 
 
   <!-- RightMenusFunction['copyLink'] = (fun) => {fun()} -->
-  
-  
- 
+
+
+
 
 
   <!-- RightMenusFunction['copyImg'] = (fun) => {fun()} -->
-  
-  
- 
 
-  
+
+
+
+
   RightMenusFunction['googleImg'] = (__link__) => {window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)}
-  
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   RightMenusFunction['darkMode'] = () => {volantis.dark.toggle()}
-  
-  
- 
+
+
+
 
 
   <!-- RightMenusFunction['printMode'] = (fun) => {fun()} -->
-  
-  
- 
+
+
+
 
 
   <!-- RightMenusFunction['readMode'] = (fun) => {fun()} -->
-  
-  
- 
-  
+
+
+
+
 
 </script>
 
@@ -3639,7 +3666,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
             Metings.forEach((item, index) => {
               const aplayerItem = item.aplayer; if(!aplayerItem) return;
               const rightAplayerCheck = 'true' === 'true'
-                && item.meta.id === '946757183'; 
+                && item.meta.id === '946757183';
               if(rightAplayerCheck) RightMenuAplayer.checkAPlayer();
               if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
                 aplayerItem.on('play', function messagePlay() {
@@ -3692,40 +3719,50 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
       <script>
   volantis.layoutHelper("comments",`<div id="waline"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  
   function pjax_waline() {
     if(!document.querySelector("#waline"))return;
-    let pagePlaceholder = pdata.commentPlaceholder || "❤️感谢大家对内容进行评论，会对您的留言进行审核\n⭕请大家理性发表观点，文明发言\n🔊禁止刷屏、进行违法犯罪行为";
+    let locale = {};
     let path = pdata.commentPath;
+    let pagePlaceholder = pdata.commentPlaceholder || "❤️感谢大家对内容进行评论，会对您的留言进行审核\n⭕请大家理性发表观点，文明发言\n🔊禁止刷屏、进行违法犯罪行为";
     if (path.length == 0) {
       let defaultPath = '';
       path = defaultPath || decodeURI(window.location.pathname);
     }
-    new Waline(Object.assign(Object.assign({"js":"https://npm.elemecdn.com/@waline/client","path":null,"placeholder":"❤️感谢大家对内容进行评论，会对您的留言进行审核\\n⭕请大家理性发表观点，文明发言\\n🔊禁止刷屏、进行违法犯罪行为","meta":["nick","mail"],"requiredFields":["nick","mail"],"serverURL":"https://pinadmin.it65720.top/","avatar":"","avatarCDN":"https://sdn.geekzu.org/avatar/","pageSize":10,"lang":"zh-CN","visitor":false,"login":"enable","wordLimit":300,"copyright":false,"uploadImage":false,"secureDomains":"it65720.top","emoji":["https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/qq","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji","https://unpkg.com/@waline/emojis@1.0.1/weibo"]}, {
-      el: '#waline',
-      path: path,
-      placeholder: pagePlaceholder,
-      
-      // https://github.com/volantis-x/hexo-theme-volantis/issues/713
-      
-  
-  }),pdata.commentConfig));
+    if(pagePlaceholder.length != 0) {
+      locale.placeholder = pagePlaceholder;
+    }
+
+    try {
+      Waline.init(Object.assign(Object.assign({"js":"https://npm.elemecdn.com/@waline/client@v2/dist/waline.js","css":"https://npm.elemecdn.com/@waline/client@v2/dist/waline.css","path":null,"placeholder":"❤️感谢大家对内容进行评论，会对您的留言进行审核\\n⭕请大家理性发表观点，文明发言\\n🔊禁止刷屏、进行违法犯罪行为","serverURL":"https://pinadmin.it65720.top/","imageUploader":{"api":null,"token":null,"resp":null},"pageview":true,"comment":true,"meta":["nick","mail"],"requiredFields":["nick","mail"],"avatar":"","avatarCDN":"https://sdn.geekzu.org/avatar/","pageSize":10,"lang":"zh-CN","visitor":false,"login":"enable","wordLimit":300,"copyright":false,"uploadImage":false,"secureDomains":"it65720.top","emoji":["https://npm.elemecdn.com/@waline/emojis@1.0.1/alus","https://npm.elemecdn.com/@waline/emojis@1.0.1/bilibili","https://npm.elemecdn.com/@waline/emojis@1.0.1/qq","https://npm.elemecdn.com/@waline/emojis@1.0.1/tieba","https://npm.elemecdn.com/@waline/emojis@1.0.1/tw-emoji","https://npm.elemecdn.com/@waline/emojis@1.0.1/weibo"]}, {
+        el: '#waline',
+        path: path,
+        // https://github.com/volantis-x/hexo-theme-volantis/issues/713
+        
+        locale,
+      }),pdata.commentConfig));
+    } catch (error) {
+      alert(`Waline ${error}`)
+    }
     fancybox_waline()
   }
+
   function fancybox_waline() {
     if(typeof VolantisFancyBox === "undefined") {
       const checkFancyBox = setInterval(() => {
         if(typeof VolantisFancyBox === "undefined") return;
         clearInterval(checkFancyBox);
-        VolantisFancyBox.bind('#waline .vcontent img:not(.vemoji)');
+        VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
       })
     } else {
-      VolantisFancyBox.bind('#waline .vcontent img:not(.vemoji)');
+      VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
     }
   }
-  volantis.js('https://npm.elemecdn.com/@waline/client').then(pjax_waline)
+
+  volantis.css('https://npm.elemecdn.com/@waline/client@v2/dist/waline.css')
+  volantis.js('https://npm.elemecdn.com/@waline/client@v2/dist/waline.js').then(pjax_waline)
   volantis.pjax.push(pjax_waline);
 </script>
-
     
 
 
@@ -3742,7 +3779,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.06d40311.js");
+    return volantis.js("/js/search/hexo.0e52f222.js");
   }
 
   function loadSearchService() {
@@ -4094,6 +4131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 方案一：
     volantis.activateNavIndex=0
+    activateNavByIndex(navItems[volantis.activateNavIndex])
     volantis.scroll.push(()=>{
       if (targets[0].getBoundingClientRect().top >= 0) {
         volantis.activateNavIndex = 0
@@ -4253,12 +4291,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"莫语小栈","url":"https://it65720.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Alex Liu","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://it65720.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://it65720.top/","name":"莫语小栈"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"莫语小栈","url":"https://it65720.top/","keywords":null,"description":"","author":{"@type":"Person","name":"Alex Liu","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://it65720.top/","description":""},"publisher":{"@type":"Organization","name":"莫语小栈","url":"https://it65720.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://it65720.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"莫语小栈","url":"https://it65720.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Alex Liu","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://it65720.top/","sameAs":["https://github.com/volantis-x"],"description":"莫语小栈"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://it65720.top/","name":"莫语小栈"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"莫语小栈","url":"https://it65720.top/","keywords":null,"description":"莫语小栈","author":{"@type":"Person","name":"Alex Liu","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://it65720.top/","description":"莫语小栈"},"publisher":{"@type":"Organization","name":"莫语小栈","url":"https://it65720.top/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://it65720.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"所有标签","description":"莫语小栈","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://it65720.top/tags/index.html"},"author":{"@type":"Person","name":"Alex Liu","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://it65720.top/"},"publisher":{"@type":"Organization","name":"莫语小栈","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://it65720.top/tags/index.html","wordCount":0,"datePublished":"2022-04-24T15:50:03.014Z","dateModified":"2022-04-24T15:50:03.014Z","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
       
-        <!-- 
+        <!--
   pjax重载区域接口：
   1.  <pjax></pjax> 标签 pjax 标签必须存在于所有页面 否则 pjax error
   2.  script[data-pjax]
@@ -4277,6 +4315,9 @@ document.addEventListener("DOMContentLoaded", function () {
       pjax = new Pjax({
         elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox]):not([onclick="return false;"]):not([onclick="return!1"]):not([target="_blank"]):not([target="view_window"]):not([href$=".xml"])',
         selectors: [
+          "head title",
+          "head meta[name=keywords]",
+          "head meta[name=description]",
           
           "#l_main",
           "#pjax-header-nav-list",
