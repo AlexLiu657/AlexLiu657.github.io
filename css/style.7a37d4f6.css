@@ -7585,6 +7585,16 @@ article#post h3 {
   width: auto;
   border-bottom: none;
 }
+article#post > h4,
+article#post h5,
+article#post h6 {
+  background: linear-gradient(to bottom, transparent 60%, rgba(189,202,219,0.3) 0) no-repeat;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: initial;
+  width: auto;
+  border-bottom: none;
+}
 article#post > h3 {
   font-weight: 500;
   position: initial;
