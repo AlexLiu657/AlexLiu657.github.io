@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>hahah</title>
+      <link href="//2022052495b172e3.html"/>
+      <url>//2022052495b172e3.html</url>
+      
+        <content type="html"><![CDATA[<p>在<a href="/202205171260b55f.html">上一篇文章</a>中，用了很大的篇幅介绍了MyBatis的配置，并且再最后进行了简单的CRUD操作，这篇文章按照点的方式来介绍一下MyBatis那些有别于JDBC的用法。</p><div class="story post-story"><h2 id="一、Mapper代理模式"><a href="#一、Mapper代理模式" class="headerlink" title="一、Mapper代理模式"></a>一、Mapper代理模式</h2><h2 id="二、如何传递多个参数"><a href="#二、如何传递多个参数" class="headerlink" title="二、如何传递多个参数"></a>二、如何传递多个参数</h2><h2 id="三、-和-的区别"><a href="#三、-和-的区别" class="headerlink" title="三、#{}和${}的区别"></a>三、#{}和${}的区别</h2><h2 id="四、如何在SQL中写一个like"><a href="#四、如何在SQL中写一个like" class="headerlink" title="四、如何在SQL中写一个like"></a>四、如何在SQL中写一个like</h2><h2 id="五、动态SQL"><a href="#五、动态SQL" class="headerlink" title="五、动态SQL"></a>五、动态SQL</h2><h2 id="六、如何获得数据库的自增主键"><a href="#六、如何获得数据库的自增主键" class="headerlink" title="六、如何获得数据库的自增主键"></a>六、如何获得数据库的自增主键</h2><h2 id="七、如何完成分页查询"><a href="#七、如何完成分页查询" class="headerlink" title="七、如何完成分页查询"></a>七、如何完成分页查询</h2><h2 id="八、如何记录SQL查询日志"><a href="#八、如何记录SQL查询日志" class="headerlink" title="八、如何记录SQL查询日志"></a>八、如何记录SQL查询日志</h2><h2 id="九、如何实现一对多的查询"><a href="#九、如何实现一对多的查询" class="headerlink" title="九、如何实现一对多的查询"></a>九、如何实现一对多的查询</h2><h2 id="十、缓存机制"><a href="#十、缓存机制" class="headerlink" title="十、缓存机制"></a>十、缓存机制</h2><h2 id="十一、Spring整合"><a href="#十一、Spring整合" class="headerlink" title="十一、Spring整合"></a>十一、Spring整合</h2><h2 id="十二、Mybatis代码生成"><a href="#十二、Mybatis代码生成" class="headerlink" title="十二、Mybatis代码生成"></a>十二、Mybatis代码生成</h2></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 分类6 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试11 </tag>
+            
+            <tag> 测试10 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>12312312312qdasfafafasfaef</title>
       <link href="//202205171260b55f.html"/>
       <url>//202205171260b55f.html</url>
